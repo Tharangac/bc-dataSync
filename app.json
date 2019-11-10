@@ -1,0 +1,41 @@
+{
+    "id": "GUID",
+    "name": "Extension Name",
+    "publisher": "TharangaC",
+    "brief": "",
+    "description": "Customer Specific Functionality",
+    "version": "1.0.0.0",
+    "privacyStatement": "",
+    "EULA": "",
+    "help": "",
+    "url": "https://www.tharangac.com/",
+    "logo": "./docs/res/logo_sm.png",
+    "capabilities": [
+
+    ],
+    "dependencies": [
+
+    ],
+    "screenshots": [
+
+    ],
+    "platform": "14.0.0.0",
+    "application": "14.0.0.0",
+    "test": "14.0.0.0",
+    "target": "Extension",
+    "idRanges": [
+      {
+        "from": 55000,
+        "to": 55200
+      }
+    ],
+  "contextSensitiveHelpUrl": "https://help.365extensions.com/?path=./$(AppShortId)/$(AppVersion)/{0}",
+    "supportedLocales": [
+      "en-NZ"
+    ],
+    "showMyCode": true,
+    "runtime": "3.0",
+    "features": [
+      "TranslationFile"
+    ]
+  }

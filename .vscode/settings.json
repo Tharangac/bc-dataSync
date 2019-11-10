@@ -1,0 +1,52 @@
+{
+    "CRS.ObjectNameSuffix": "_TC",
+    "CRS.OnSaveAlFileAction": "Reorganize",
+    "CRS.DisableDefaultAlSnippets": true,
+    "CRS.RenameWithGit": true,
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": [
+        "${AppSourceCop}",
+        "${CodeCop}",
+        "${PerTenantExtensionCop}"
+    ],
+    "al.assemblyProbingPaths": [
+        "./.netpackages",
+        "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.6"
+    ],
+    "files.exclude": {
+        ".vscode/keybindings.json": true,
+        ".vscode/tasks.json": true,
+        ".vscode/extensions.json": true,
+        ".vscode/al.code-snippets": true,
+        ".gitignore": true,
+        ".alpackages": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "plantuml.diagramsRoot": "docs/res/diagrams",
+    "plantuml.exportOutDir": "docs/res/diagrams",
+    "plantuml.exportSubFolder": false,
+    "plantuml.exportFormat": "png",
+    "plantuml.render": "PlantUMLServer",
+    "plantuml.server": "https://www.plantuml.com/plantuml",
+    "todohighlight.include": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.html",
+        "**/*.php",
+        "**/*.css",
+        "**/*.scss",
+        "**/*.al",
+        "**/*.ps1"
+    ],
+    "todohighlight.isEnable": true,
+    "cSpell.words": [
+        "alpackages",
+        "bitbucket",
+        "codeunit",
+        "featureflags",
+        "jira"
+    ]
+}

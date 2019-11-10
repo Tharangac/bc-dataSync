@@ -1,41 +1,44 @@
 {
-    "id": "GUID",
-    "name": "Extension Name",
-    "publisher": "TharangaC",
-    "brief": "",
-    "description": "Customer Specific Functionality",
-    "version": "1.0.0.0",
-    "privacyStatement": "",
-    "EULA": "",
-    "help": "",
-    "url": "https://www.tharangac.com/",
-    "logo": "./docs/res/logo_sm.png",
-    "capabilities": [
-
-    ],
-    "dependencies": [
-
-    ],
-    "screenshots": [
-
-    ],
-    "platform": "14.0.0.0",
-    "application": "14.0.0.0",
-    "test": "14.0.0.0",
-    "target": "Extension",
-    "idRanges": [
-      {
-        "from": 55000,
-        "to": 55200
-      }
-    ],
-  "contextSensitiveHelpUrl": "https://help.365extensions.com/?path=./$(AppShortId)/$(AppVersion)/{0}",
-    "supportedLocales": [
-      "en-NZ"
-    ],
-    "showMyCode": true,
-    "runtime": "3.0",
-    "features": [
-      "TranslationFile"
-    ]
-  }
+  "id": "2122de09-21b5-42f4-99a6-81bd9f4b4b2b",
+  "name": "Data Sync",
+  "publisher": "TharangaC",
+  "description": "Customer Specific Functionality",
+  "version": "1.0.0.0",
+  "privacyStatement": "https://www.tharangac.com/",
+  "EULA": "https://www.tharangac.com/",
+  "help": "https://www.tharangac.com/",
+  "url": "https://www.tharangac.com/",
+  "logo": "./docs/res/logo_sm.png",
+  "brief": "https://www.tharangac.com/",
+   "capabilities": [
+  ],
+  "dependencies": [
+    {
+      "appId": "2122de09-21b5-42f4-99a6-3e13b3cb339a",
+      "name": "Event Handler",
+      "publisher": "TharangaC",
+      "version": "1.0.0.5"
+    }
+  ],
+  "screenshots": [
+  ],
+  "platform": "14.0.0.0",
+  "application": "14.0.0.0",
+  "test": "14.0.0.0",
+  "target": "Extension",
+  "idRanges": [
+    {
+      "from": 55200,
+      "to": 55299
+    }
+  ],
+"contextSensitiveHelpUrl": "https://help.365extensions.com/?path=./$(AppShortId)/$(AppVersion)/{0}",
+  "supportedLocales": [
+    "en-NZ"
+  ],
+  "showMyCode": true,
+  "runtime": "3.0",
+  "features": [
+    "TranslationFile"
+  ]
+}

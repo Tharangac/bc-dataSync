@@ -1,8 +1,10 @@
 {
-    "CRS.ObjectNameSuffix": "_TC",
     "CRS.OnSaveAlFileAction": "Reorganize",
-    "CRS.DisableDefaultAlSnippets": true,
-    "CRS.RenameWithGit": true,
+    "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.ObjectNamePrefix": "DS_",
+    "CRS.RemovePrefixFromFilename": true,
     "al.enableCodeAnalysis": true,
     "al.codeAnalyzers": [
         "${AppSourceCop}",

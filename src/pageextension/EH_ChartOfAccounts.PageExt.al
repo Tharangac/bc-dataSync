@@ -1,4 +1,4 @@
-pageextension 55201 "DS_EH_Chart Of Accounts" extends "Chart of Accounts" //MyTargetPageId
+pageextension 55201 "DS_EH_Chart Of Accounts" extends "Chart of Accounts"
 {
     actions
     {
@@ -20,7 +20,7 @@ pageextension 55201 "DS_EH_Chart Of Accounts" extends "Chart of Accounts" //MyTa
                     GLAccountRec: Record "G/L Account";
                     SyncGLAccount: Codeunit "DS_Sync GL Account";
                 begin
-                    if not Confirm('Do you want to Synchronize selected records', true) then
+                    if not Confirm('Do you want to Synchronize selected records?', true) then
                         exit;
 
                     CurrPage.SetSelectionFilter(GLAccountRec);

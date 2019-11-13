@@ -19,7 +19,7 @@ pageextension 55200 "DS_EH_Customer List" extends "Customer List"
                     CustomerRec: Record Customer;
                     SyncCustomer: Codeunit "DS_Sync Customer";
                 begin
-                    if not Confirm('Do you want to Synchronize selected records', true) then
+                    if not Confirm('Do you want to Synchronize selected records?', true) then
                         exit;
 
                     CurrPage.SetSelectionFilter(CustomerRec);

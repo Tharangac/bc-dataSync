@@ -19,7 +19,7 @@ pageextension 55202 "DS_EH_Vendor List" extends "Vendor List" //MyTargetPageId
                     VendorRec: Record Vendor;
                     SyncVendor: Codeunit "DS_Sync Vendor";
                 begin
-                    if not Confirm('Do you want to Synchronize selected records', true) then
+                    if not Confirm('Do you want to Synchronize selected records?', true) then
                         exit;
 
                     CurrPage.SetSelectionFilter(VendorRec);

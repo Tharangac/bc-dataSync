@@ -2,7 +2,7 @@ page 55201 "DS_Data Sync Master List"
 {
     PageType = List;
     SourceTable = "DS_Data Sync Master";
-    Caption = 'Data Sync Master List';
+    Caption = 'Data Synchronization Master List';
     ApplicationArea = All;
     UsageCategory = Lists;
     CardPageId = "DS_Data Sync Master";

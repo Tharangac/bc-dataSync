@@ -1,4 +1,4 @@
-pageextension 55200 "DS_EH_Customer List" extends "Customer List"
+pageextension 55202 "DS_EH_Vendor List" extends "Vendor List" //MyTargetPageId
 {
     actions
     {
@@ -16,16 +16,16 @@ pageextension 55200 "DS_EH_Customer List" extends "Customer List"
 
                 trigger OnAction()
                 var
-                    CustomerRec: Record Customer;
-                    SyncCustomer: Codeunit "DS_Sync Customer";
+                    VendorRec: Record Vendor;
+                    SyncVendor: Codeunit "DS_Sync Vendor";
                 begin
                     if not Confirm('Do you want to Synchronize selected records', true) then
                         exit;
 
-                    CurrPage.SetSelectionFilter(CustomerRec);
+                    CurrPage.SetSelectionFilter(VendorRec);
 
-                    IF CustomerRec.FindFirst() then
-                        SyncCustomer.SyncCustomerRecords(CustomerRec);
+                    IF VendorRec.FindFirst() then
+                        SyncVendor.SyncVendorRecords(VendorRec);
 
                     Message('Synchronize complete');
                 end;

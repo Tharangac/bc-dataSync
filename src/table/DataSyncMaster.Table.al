@@ -1,6 +1,6 @@
 table 55200 "DS_Data Sync Master"
 {
-    Caption = 'Data Sync Master';
+    Caption = 'Data Synchronize Master';
     DataClassification = CustomerContent;
     LookupPageId = "DS_Data Sync Master List";
 

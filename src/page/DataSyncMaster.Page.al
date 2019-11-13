@@ -3,7 +3,7 @@ page 55200 "DS_Data Sync Master"
 
     PageType = Card;
     SourceTable = "DS_Data Sync Master";
-    Caption = 'Data Sync Master';
+    Caption = 'Data Synchronization';
 
     layout
     {

@@ -3,29 +3,36 @@
   "name": "Data Sync",
   "publisher": "TharangaC",
   "description": "Customer Specific Functionality",
-  "version": "1.0.0.0",
+  "version": "1.0.2.0",
   "privacyStatement": "https://www.tharangac.com/",
   "EULA": "https://www.tharangac.com/",
   "help": "https://www.tharangac.com/",
   "url": "https://www.tharangac.com/",
   "logo": "./docs/res/logo_sm.png",
   "brief": "https://www.tharangac.com/",
-   "capabilities": [
-  ],
   "dependencies": [
     {
       "appId": "2122de09-21b5-42f4-99a6-3e13b3cb339a",
       "name": "Event Handler",
       "publisher": "TharangaC",
-      "version": "1.0.0.5"
+      "version": "1.0.2.0"
+    },
+    {
+      "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+      "name": "System Application",
+      "publisher": "Microsoft",
+      "version": "15.0.36626.37536"
+    },
+    {
+      "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "name": "Base Application",
+      "publisher": "Microsoft",
+      "version": "15.0.36626.37934"
     }
   ],
   "screenshots": [
   ],
-  "platform": "14.0.0.0",
-  "application": "14.0.0.0",
-  "test": "14.0.0.0",
-  "target": "Extension",
+  "target": "Cloud",
   "idRanges": [
     {
       "from": 55200,
@@ -37,7 +44,7 @@
     "en-NZ"
   ],
   "showMyCode": true,
-  "runtime": "3.0",
+  "runtime": "4.0",
   "features": [
     "TranslationFile"
   ]

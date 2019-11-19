@@ -17,9 +17,9 @@ page 55250 "DS_Customer Entity"
         {
             repeater(General)
             {
-                field(no; "No.")
+                field(number; "No.")
                 {
-                    Caption = 'no';
+                    Caption = 'number';
                     ApplicationArea = All;
                 }
                 field(id; Id)
@@ -27,9 +27,9 @@ page 55250 "DS_Customer Entity"
                     Caption = 'id';
                     ApplicationArea = All;
                 }
-                field(name; Name)
+                field(accountName; Name)
                 {
-                    Caption = 'name';
+                    Caption = 'accountName';
                     ApplicationArea = All;
                 }
                 field(eMail; "E-Mail")

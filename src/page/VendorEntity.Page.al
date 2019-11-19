@@ -1,7 +1,7 @@
 page 55252 "DS_Vendor Entity"
 {
     PageType = API;
-    SourceTable = customer;
+    SourceTable = Vendor;
     APIPublisher = 'tc';
     APIGroup = 'dataSync';
     APIVersion = 'v1.0';
@@ -17,9 +17,9 @@ page 55252 "DS_Vendor Entity"
         {
             repeater(General)
             {
-                field(no; "No.")
+                field(number; "No.")
                 {
-                    Caption = 'no';
+                    Caption = 'number';
                     ApplicationArea = All;
                 }
                 field(id; Id)
@@ -27,19 +27,14 @@ page 55252 "DS_Vendor Entity"
                     Caption = 'id';
                     ApplicationArea = All;
                 }
-                field(name; Name)
+                field(accountName; Name)
                 {
-                    Caption = 'name';
+                    Caption = 'accountName';
                     ApplicationArea = All;
                 }
                 field(eMail; "E-Mail")
                 {
                     Caption = 'eMail';
-                    ApplicationArea = All;
-                }
-                field(creditLimitLCY; "Credit Limit (LCY)")
-                {
-                    Caption = 'creditLimitLCY';
                     ApplicationArea = All;
                 }
             }

@@ -17,9 +17,9 @@ page 55251 "DS_GLAccount Entity"
         {
             repeater(General)
             {
-                field(no; "No.")
+                field(number; "No.")
                 {
-                    Caption = 'no';
+                    Caption = 'number';
                     ApplicationArea = All;
                 }
                 field(id; Id)
@@ -27,9 +27,19 @@ page 55251 "DS_GLAccount Entity"
                     Caption = 'id';
                     ApplicationArea = All;
                 }
-                field(name; Name)
+                field(accountName; Name)
                 {
-                    Caption = 'name';
+                    Caption = 'accountName';
+                    ApplicationArea = All;
+                }
+                field(accountType; "Account Type")
+                {
+                    Caption = 'accountType';
+                    ApplicationArea = All;
+                }
+                field(indentation; Indentation)
+                {
+                    Caption = 'indentation';
                     ApplicationArea = All;
                 }
             }

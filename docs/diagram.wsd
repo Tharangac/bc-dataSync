@@ -1,0 +1,65 @@
+@startuml
+start
+
+while (Development) is (Yes)
+
+    if (Object needs to modify?) then (Yes)
+        : Lock the object;
+        : Check revision tag in version list;
+            note left
+                Add _ to version list
+                    Ex : _TSL$Revision$
+                 Add revision tag only if the revision tag is not available
+                ====
+                * Do not change the version number
+            end note
+        : Document the changes with task No. - Document Header;
+            note right
+            Theta Comments Start
+            $Revision$
+            TicketNumber IntialOfTheDeveloper Date Short Description
+            Theta Comments End
+            ====
+            * Theta Comments Start and End
+                should only be added if not available in Document Header
+            * $Revision$ tag should not be changed by the user.
+                (Add it only if it is not available)
+            end note
+        : Modify the object;
+        : Document the code changes - Inline;
+            note right
+            Theta Comments Start
+            TicketNumber >>
+                // Current code lines
+                New Code Lines.....
+            << TicketNumber
+            ====
+            * Current code lines should not be deleted. Always comment it out.
+            end note
+    endif
+
+    If (Is it day end?) then (yes)
+        : Export all modified objects and version.;
+        note left
+        * Do not remove modified tick.
+        * Tag object with the ticket number.
+        end note
+    endif
+endwhile (Complete)
+    : Test the changes in Theta development;
+    : Export all modified objects and version.;
+    note left
+    * Remove _ from the version list
+        Ex : (_TSL$Revison$ -> TSL$revision$)
+    * Remove modified tick.
+    * Tag object with the ticket number.
+    end note
+    : Deploy changes to UAT and inform functional consultant to test;
+    if (Changes approved?) then (yes)
+        : Backup production objects.;
+        : Deploy changes to production.;
+    else (no)
+        : Follow the development phase;
+    endif
+stop
+@endum

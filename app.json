@@ -3,7 +3,7 @@
   "name": "Data Sync",
   "publisher": "TharangaC",
   "description": "Customer Specific Functionality",
-  "version": "1.0.2.5",
+  "version": "1.0.2.6",
   "privacyStatement": "https://www.tharangac.com/",
   "EULA": "https://www.tharangac.com/",
   "help": "https://www.tharangac.com/",
@@ -15,7 +15,7 @@
       "appId": "2122de09-21b5-42f4-99a6-3e13b3cb339a",
       "name": "Event Handler",
       "publisher": "TharangaC",
-      "version": "1.0.2.0"
+      "version": "1.0.2.2"
     },
     {
       "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",

@@ -1,2 +1,2 @@
 # bc-master
-Business Central Master
+Repo is used for the BCTechDays presentation.
